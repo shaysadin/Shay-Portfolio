@@ -1,0 +1,90 @@
+
+  
+  .laptop-frame {
+    width: 100%;
+    padding-top: 61.5%; /* Maintain the laptop frame's aspect ratio (370 / 600 * 100) */
+    background-image: url('./laptop-placeholder.png');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.5s ease;
+    z-index: 1;
+  }
+  
+  .laptop-frame:hover {
+    transform: scale(1.05);
+  }
+  
+  .website-info {
+    position: absolute;
+    background-color: rgba(46, 26, 223, 0.164); /* Semi-transparent black background */
+    color: #ffffff; /* Text color */
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%; /* Occupy the full width */
+    font-size: 16px; /* Adjust the font size */
+    text-align: center; /* Center the text */
+    bottom: -15px; /* Adjust the distance from the bottom */
+    left: 0; /* Align with the left edge of the container */
+    right: 0; /* Align with the right edge of the container */
+    z-index: 2; /* Ensure the text appears above the laptop frame */
+  }
+  .website-container {
+    width: 84%;
+    height: 85%;
+    overflow: auto;
+    position: absolute;
+    top: 20px;
+    left: 47px;
+    scrollbar-width: thin;
+    scrollbar-color: #888888 #f0f0f0;
+  }
+
+  @media only screen and (max-width: 668px) and (min-width: 451px) {
+  
+  .website-container-small {
+    top: 14px;
+    left: 34px;
+  }}
+
+  @media only screen and (max-width: 450px) and (min-width: 200px) {
+  
+    .website-container-small {
+      top: 10px;
+      left: 26px;
+    }}
+
+  /* Customize the scrollbar track */
+  .website-container::-webkit-scrollbar {
+    width: 6px; /* Adjust the width of the scrollbar */
+  }
+  
+  /* Customize the scrollbar thumb */
+  .website-container::-webkit-scrollbar-thumb {
+    background-color: #888888; /* Color of the scrollbar thumb */
+    border-radius: 3px; /* Rounded corners for the thumb */
+  }
+  
+  /* Customize the scrollbar thumb when hovering */
+  .website-container::-webkit-scrollbar-thumb:hover {
+    background-color: #555555; /* Color of the thumb when hovering */
+  }
+  
+  /* Customize the scrollbar track when hovering */
+  .website-container::-webkit-scrollbar-thumb:vertical:hover {
+    background-color: #444444;
+  }
+  
+  .website-screenshot {
+    width: 100%;
+    height: fit-content; /* Height of your website screenshot */
+    pointer-events: none; /* Allow scrolling within the container, not on the image */
+  }
+
+  .shadow-tex {
+    box-shadow: rgba(185, 49, 226, 0.39) 3px 3px, rgba(214, 22, 231, 0.3) 6px 6px, rgba(162, 46, 240, 0.2) 9px 9px, rgba(208, 46, 240, 0.1) 12px 12px, rgba(217, 46, 240, 0.05) 15px 15px;
+  }
+
+  
+
